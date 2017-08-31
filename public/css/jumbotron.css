@@ -1,0 +1,52 @@
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.menu {
+	float: left;
+}
+
+.menu li {
+	padding: 15px;
+	float: left;
+	list-style: none;
+	
+	height: 50px;
+	font-size: 18px;
+	line-height: 20px;
+	
+}
+
+.menu li a {
+	color: white !important;
+}
+
+.navbar {
+	background-color:#2e6da4 !important;
+}
+
+.navbar-brand {
+	color: #eeeeee !important;
+}
+
+.jumbotron {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+/*.form-group div{
+    position:relative;
+    margin-right:15px;
+}*/
+.form-group div:after{
+    position:absolute;
+    content:'*';
+    color:red;
+    right:-10px;
+    top:0;
+}
+
+.btn-group {
+	margin-left: 42%;
+}
