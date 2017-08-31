@@ -11,7 +11,7 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="menu">
-                <li class="active"><a href="/">Articles</a></li>
+                <li class="active"><a href="{{ route('articles')}} ">Articles</a></li>
                 <li class="active"><a href="{{route('about')}}">About</a></li>
                 <li class="active"><a href="{{route('contactUs')}}">Contact Us</a></li>
             </ul>

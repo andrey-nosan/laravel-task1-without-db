@@ -15,7 +15,15 @@ Route::get('/', function () {
     return redirect('home');
 });
 
-Route::get('home', 'IndexController@articlesList');
+Route::get('home', function() {
+	return view('home')
+		->with([
+			'header' => 'Home Page'
+		]);
+});
+
+Route::get('articles', 'IndexController@articlesList')
+	->name('articles');
 
 Route::get('article/{id}', 'IndexController@articleShow')
 	->where('id', '[0-9]+')
